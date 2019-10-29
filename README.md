@@ -1,6 +1,6 @@
 # e-store
-A FED assignment creating a microstore with the use of Vue CLI 3
-the project depends on axios npm for communication with the server.
+A FED assignment creating a microstore with the use of Vue CLI 3.
+The project depends on axios npm for communication with the server.
 ## Project setup
 ```
 npm install / npm i
