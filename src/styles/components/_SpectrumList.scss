@@ -1,0 +1,13 @@
+.list-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: rem(1250px);
+    margin: 0 auto;
+    @media screen and (max-width:560px) {
+        width: rem(350px);
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+}

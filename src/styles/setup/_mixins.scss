@@ -1,0 +1,29 @@
+@mixin quantity {
+    .quantity-container {
+        width: 90%;
+        & p {
+            font-size: 15px;
+        }
+        & .quantity-input {
+            display: inline-block;
+            width: rem(70px); 
+            height: rem(40px);
+            text-align: center;
+            border-radius: 5px;
+            border: solid 0.3px #a8a8a8;
+            background-color: white;
+            outline: none;
+        }
+        & .quantity-increment, .quantity-decrement {
+            background: none;
+            outline: none;
+            font-size: 16px;
+            text-align: center;
+            border: solid 1px #d5d5d5;
+            background-image: linear-gradient(to top, #f7fcfb, #ffffff);
+            &:hover {
+                cursor: pointer
+            }
+        }
+    }
+}

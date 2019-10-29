@@ -1,0 +1,10 @@
+.product-img {
+    width: rem(280px);
+    height: rem(280px);
+    object-fit: contain;
+    @media screen and (max-width:560px) {
+        width: rem(155px);
+        height: rem(155px);
+        object-fit: contain;
+    }
+}

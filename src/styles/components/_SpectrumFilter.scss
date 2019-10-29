@@ -1,0 +1,26 @@
+.filter-text-input {
+    border:none;
+    outline: none;
+    border-bottom: 2px solid #31a893;
+    opacity: 0.7;
+}
+
+.range-input-container {
+    width: rem(320px);
+    & p {
+        font-size: 14px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.21;
+        letter-spacing: normal;
+        color: #31a893;
+    }
+}
+
+.filter-search-btn {
+    text-decoration: underline;
+    &:hover {
+        cursor: pointer
+    }
+}

@@ -1,0 +1,96 @@
+p {
+    margin: 0;
+    padding: 0;
+}
+.details-container {
+    max-width: rem(1250px);
+    margin: 0 auto;
+    @media screen and (max-width:560px) {
+        flex-direction: column;
+    }
+
+}
+.product-description-container {
+    max-width: rem(400px);
+    height: rem(220px);
+    margin:0 15px 0 40px;
+    color: #2c2b2a;
+    font-stretch: normal;
+    font-style: normal;
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @media screen and (max-width:560px) {
+        max-width: rem(350px);
+        height: rem(270px);
+        margin-bottom: 10px;
+    }
+    &:hover {
+        overflow: visible;
+    }
+    & .product-desc {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.67;
+        letter-spacing: 0.38px;
+
+    }
+    & .product-title {
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 1.11;
+        letter-spacing: 0.7px;
+    }
+    & .product-price {
+        font-size: 18px;
+        line-height: 1.72;
+        letter-spacing: 0.45px;
+        &::before {
+            content: '$'
+        }
+    }
+}
+.product-order-form {
+    width: rem(290px);
+    height: 15rem;
+    padding: 0 0 0 25px;
+    & .submit-order {
+        width: 100%;
+        height: rem(45px);
+        outline: none;
+        font-size: 18px;
+        color: white;
+        box-shadow: 0px 1px 3px 0 rgba(7, 7, 8, 0.46);
+        background-image: linear-gradient(to top, #31a893, #34ceb3);
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    & .quantity-container {
+        width: 90%;
+        & p {
+            font-size: 15px;
+        }
+        & .quantity-input {
+            display: inline-block;
+            width: rem(70px); 
+            height: rem(40px);
+            text-align: center;
+            border-radius: 5px;
+            border: solid 0.3px #a8a8a8;
+            background-color: white;
+            outline: none;
+        }
+        & .quantity-increment, .quantity-decrement {
+            background: none;
+            outline: none;
+            font-size: 16px;
+            text-align: center;
+            border: solid 1px #d5d5d5;
+            background-image: linear-gradient(to top, #f7fcfb, #ffffff);
+            &:hover {
+                cursor: pointer
+            }
+        }
+    }
+}
